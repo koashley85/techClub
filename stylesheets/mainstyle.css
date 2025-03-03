@@ -1,0 +1,135 @@
+/* Global styles */
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #336699;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #336699; /* blue background */
+    color: white; /* White text to contrast with blue */
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6 {
+    margin: 0;
+}
+
+header hr {
+    border: 0;
+    border-top: 2px solid #ddd;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #000000; /* black background */
+    padding: 10px 0;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Hover effect on navigation links */
+nav a:hover {
+    background-color: #FF5722;
+    border-radius: 5px;
+}
+
+/* Active link styles (for the current page) */
+nav a.active {
+    background-color: blue;
+    color: white;
+}
+
+/* Flexbox Container for Main and Floating Sections */
+.container {
+    display: flex;
+    flex-direction: row; /* Align items in a row (side by side) */
+    justify-content: space-between;
+    margin-top: 20px; /* Space between the nav and the sections */
+    padding: 0 20px; /* Optional padding around the content */
+}
+
+/* Floating Section Styles */
+.floating-section {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-right: 20px; /* Space between the floating section and the main section */
+}
+
+/* Main Section Styles */
+.main-section {
+    width: 65%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Table should take up the full width of the container */
+    border-collapse: collapse;
+    margin: 20px 0; /* Add space above and below the table */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+th, td {
+    border: 1px dotted black;
+    padding: 10px;
+    text-align: center;
+}
+
+.merged {
+    background-color: #f0f0f0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Stack the sections on top of each other */
+    .container {
+        flex-direction: column;
+    }
+
+    /* Make the floating section full-width */
+    .floating-section,
+    .main-section {
+        width: 100%; /* Full width f
